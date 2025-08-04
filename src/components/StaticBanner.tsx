@@ -7,7 +7,7 @@ function StaticBanner() {
     <>
       <Flex height={50} justifyContent="space-between" alignContent="center">
         <HStack paddingX={40}>
-          <Icon as={CiDeliveryTruck} color="#FFFFFF" boxSize={9} />
+          <Icon as={CiDeliveryTruck} color="#FFFFFF" boxSize={8} />
           <Text
             fontFamily="'Josefin Sans Variable', sans-serif"
             color="#FFFFFF"
@@ -17,8 +17,8 @@ function StaticBanner() {
           </Text>
         </HStack>
         <HStack paddingX={10}>
-          <Icon as={SlSocialFacebook} color="#FFFFFF" boxSize={6} />
-          <Icon as={SlSocialInstagram} color="#FFFFFF" boxSize={6} />
+          <Icon as={SlSocialFacebook} color="#FFFFFF" boxSize={5} />
+          <Icon as={SlSocialInstagram} color="#FFFFFF" boxSize={5} />
         </HStack>
       </Flex>
     </>
