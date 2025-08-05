@@ -16,50 +16,37 @@ interface CategoriesCardProps {
 function CategoriesCard({ category }: CategoriesCardProps) {
   return (
     <>
-      <Card
-        w="100%"
-        bg="transparent"
-        boxShadow="none"
-        borderRadius="none"
-        display="flex"
-        flexDirection="column"
-        alignItems="center"
-        textAlign="center"
-      >
-        <VStack spacing="5px" align="center">
-          <Image
-            src={category.image}
-            boxSize="200px"
-            objectFit="cover"
-            borderRadius="10px"
-          />
-        </VStack>
+      <Card maxW="200px" bg="transparent" boxShadow="none" borderRadius="md">
+        <Image src={category.image} borderRadius="10px" boxSize="220px" />
         <CardBody>
-          <VStack spacing="5px" align="center">
-            <Box
-              h="60px"
-              display="flex"
-              alignItems="center"
-              justifyContent="center"
+          <Box
+            h="50px"
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+            marginTop="0px"
+          >
+            <Heading
+              fontSize="sm"
+              textAlign="center"
+              fontFamily="'Josefin Sans Variable', sans-serif"
+              color="#FFFFFF"
             >
-              <Heading
-                fontSize="md"
-                textAlign="center"
-                fontFamily="'Josefin Sans Variable', sans-serif"
-                color="#FFFFFF"
-              >
-                {category.title}
-              </Heading>
-            </Box>
+              {category.title}
+            </Heading>
+          </Box>
+          <Box display="flex" alignItems="center" justifyContent="center">
             <Button
               bg="#EC8C44"
-              paddingX="20px"
+              paddingX="45px"
+              marginTop="5px"
               color="#FFFFFF"
               fontFamily="'Josefin Sans Variable', sans-serif"
+              boxSize="30px"
             >
               Ver Todo
             </Button>
-          </VStack>
+          </Box>
         </CardBody>
       </Card>
     </>
