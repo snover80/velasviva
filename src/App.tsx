@@ -1,8 +1,9 @@
 import "./App.css";
-import { Grid, GridItem } from "@chakra-ui/react";
+import { Flex, Grid, GridItem } from "@chakra-ui/react";
 import StaticBanner from "./components/StaticBanner";
 import NavBar from "./components/NavBar";
 import MainBanner from "./components/MainBanner";
+import CategoriesGrid from "./components/CategoriesGrid";
 
 function App() {
   return (
@@ -23,8 +24,10 @@ function App() {
         <MainBanner />
       </GridItem>
 
-      <GridItem area="categories" bg="blue">
-        Categories
+      <GridItem area="categories">
+        <Flex minH="300px">
+          <CategoriesGrid />
+        </Flex>
       </GridItem>
 
       <GridItem area="faq" bg="orange">
