@@ -24,7 +24,7 @@ function App() {
         <MainBanner />
       </GridItem>
 
-      <GridItem area="categories">
+      <GridItem area="categories" bg="#4A5721">
         <Flex minH="300px">
           <CategoriesGrid />
         </Flex>
