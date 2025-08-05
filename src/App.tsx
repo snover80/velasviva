@@ -2,6 +2,7 @@ import "./App.css";
 import { Grid, GridItem } from "@chakra-ui/react";
 import StaticBanner from "./components/StaticBanner";
 import NavBar from "./components/NavBar";
+import MainBanner from "./components/MainBanner";
 
 function App() {
   return (
@@ -14,12 +15,12 @@ function App() {
         <StaticBanner />
       </GridItem>
 
-      <GridItem area="banner" bg="#FFFFFF">
+      <GridItem area="banner">
         <NavBar />
       </GridItem>
 
-      <GridItem area="carousel" bg="yellow">
-        Carousel
+      <GridItem area="carousel">
+        <MainBanner />
       </GridItem>
 
       <GridItem area="categories" bg="blue">
