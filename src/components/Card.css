@@ -1,0 +1,11 @@
+import 
+
+.box-structure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.white-text {
+    color: #FFFFFF;
+}
