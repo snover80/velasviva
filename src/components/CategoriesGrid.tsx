@@ -47,8 +47,8 @@ function CategoriesGrid() {
         />
         <SimpleGrid
           columns={{ sm: 2, md: 2, lg: 3 }}
-          paddingY="15px"
-          spacing="15px"
+          paddingY="30px"
+          spacing="60px"
         >
           {categories.map((category) => (
             <CategoriesCard category={category} />

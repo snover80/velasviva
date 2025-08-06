@@ -1,12 +1,4 @@
-import {
-  Box,
-  Button,
-  Card,
-  CardBody,
-  Heading,
-  Image,
-  VStack,
-} from "@chakra-ui/react";
+import { Box, Button, Card, CardBody, Heading, Image } from "@chakra-ui/react";
 import type { Category } from "./CategoriesGrid";
 
 interface CategoriesCardProps {
@@ -16,8 +8,8 @@ interface CategoriesCardProps {
 function CategoriesCard({ category }: CategoriesCardProps) {
   return (
     <>
-      <Card maxW="200px" bg="transparent" boxShadow="none" borderRadius="md">
-        <Image src={category.image} borderRadius="10px" boxSize="220px" />
+      <Card maxW="265px" bg="transparent" boxShadow="none" borderRadius="md">
+        <Image src={category.image} borderRadius="10px" boxSize="265px" />
         <CardBody>
           <Box
             h="50px"
