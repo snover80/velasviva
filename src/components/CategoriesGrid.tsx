@@ -3,6 +3,8 @@ import CategoriesCard from "./CategoriesCard";
 import virgin from "../assets/Virgin.webp";
 import flowers from "../assets/Flowers.webp";
 import christmas from "../assets/Christmas.webp";
+import bars from "../assets/Bars.webp";
+import "./Card.css";
 
 export interface Category {
   title: string;
@@ -20,6 +22,10 @@ function CategoriesGrid() {
       title: "Velas decorativas, aromatizadas y recordatorios",
       image: flowers,
     },
+    {
+      title: "Kits espirituales velas viva",
+      image: bars,
+    },
   ];
   return (
     <>
@@ -29,26 +35,20 @@ function CategoriesGrid() {
         w="100%"
         px={{ base: "10px", md: "20px" }}
       >
-        <Heading
-          marginTop="10px"
-          fontSize="2xl"
-          fontFamily="'Josefin Sans Variable', sans-serif"
-          color="#FFFFFF"
-        >
+        <Heading marginTop="20px" fontSize="2xl" className="white-text">
           NUESTRAS CATEGORÍAS
         </Heading>
         <Box
+          className="box-structure"
           w="40px"
           h="3px"
           bg="#EC8C44"
           borderRadius="full"
-          justifyContent="center"
-          alignItems="center"
         />
         <SimpleGrid
-          columns={{ sm: 2, md: 2, lg: 3 }}
+          columns={{ sm: 3, md: 3, lg: 4 }}
           paddingY="30px"
-          spacing="60px"
+          spacing="20px"
         >
           {categories.map((category) => (
             <CategoriesCard category={category} />
