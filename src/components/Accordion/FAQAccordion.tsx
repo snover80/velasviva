@@ -17,8 +17,8 @@ function FAQAccordion({ accordionInfo }: FAQAccordionProps) {
   return (
     <Box padding="15px" marginTop="15px">
       <Accordion allowToggle color="#4A5721">
-        {accordionInfo.map((information) => (
-          <AccordionItem>
+        {accordionInfo.map((information, index) => (
+          <AccordionItem key={index}>
             <h2>
               <AccordionButton>
                 <Box as="span" flex="1" textAlign="left">
@@ -28,8 +28,8 @@ function FAQAccordion({ accordionInfo }: FAQAccordionProps) {
               </AccordionButton>
             </h2>
             <AccordionPanel pb={4}>
-              {information.text.map((raw) => (
-                <Text fontSize="sm" margin="5px">
+              {information.text.map((raw, index) => (
+                <Text key={index} fontSize="sm" margin="5px">
                   {raw}
                 </Text>
               ))}

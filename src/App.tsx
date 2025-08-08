@@ -4,9 +4,9 @@ import StaticBanner from "./components/StaticBanner";
 import NavBar from "./components/NavBar";
 import MainBanner from "./components/MainBanner";
 import CategoriesGrid from "./components/Categories/CategoriesGrid";
-import FAQAccordion from "./components/Accordion/FAQAccordion";
 import TitleAccordion from "./components/Accordion/TitleAccordion";
 import AccordingGrid from "./components/Accordion/AccordingGrid";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -14,12 +14,13 @@ function App() {
       templateAreas={{
         base: `"nav" "banner" "carousel" "categories" "faq" "footer"`,
       }}
+      bg="#4A5721"
     >
-      <GridItem area="nav" bg="#4A5721">
+      <GridItem area="nav">
         <StaticBanner />
       </GridItem>
 
-      <GridItem area="banner">
+      <GridItem area="banner" bg="#FFFFFF">
         <NavBar />
       </GridItem>
 
@@ -27,7 +28,7 @@ function App() {
         <MainBanner />
       </GridItem>
 
-      <GridItem area="categories" bg="#4A5721">
+      <GridItem area="categories">
         <Flex minH="300px">
           <CategoriesGrid />
         </Flex>
@@ -38,8 +39,8 @@ function App() {
         <AccordingGrid />
       </GridItem>
 
-      <GridItem area="footer" bg="#4A5721">
-        Footer
+      <GridItem area="footer">
+        <Footer />
       </GridItem>
     </Grid>
   );

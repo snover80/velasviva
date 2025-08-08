@@ -47,8 +47,8 @@ function CategoriesGrid() {
           paddingY="30px"
           spacing="20px"
         >
-          {categories.map((category) => (
-            <CategoriesCard category={category} />
+          {categories.map((category, index) => (
+            <CategoriesCard key={index} category={category} />
           ))}
         </SimpleGrid>
       </VStack>

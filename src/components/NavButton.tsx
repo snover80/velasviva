@@ -3,16 +3,17 @@ import type { ReactNode } from "react";
 
 interface NavButtonProps {
   children: ReactNode;
+  color?: string;
 }
 
-function NavButton({ children }: NavButtonProps) {
+function NavButton({ children, color }: NavButtonProps) {
   return (
     <Button
       position="relative"
       top="5px"
       fontSize="sm"
       variant="link"
-      textColor="#4A5721"
+      textColor={color || "#4A5721"}
     >
       {children}
     </Button>
