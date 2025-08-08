@@ -3,7 +3,10 @@ import { Flex, Grid, GridItem } from "@chakra-ui/react";
 import StaticBanner from "./components/StaticBanner";
 import NavBar from "./components/NavBar";
 import MainBanner from "./components/MainBanner";
-import CategoriesGrid from "./components/CategoriesGrid";
+import CategoriesGrid from "./components/Categories/CategoriesGrid";
+import FAQAccordion from "./components/Accordion/FAQAccordion";
+import TitleAccordion from "./components/Accordion/TitleAccordion";
+import AccordingGrid from "./components/Accordion/AccordingGrid";
 
 function App() {
   return (
@@ -30,8 +33,9 @@ function App() {
         </Flex>
       </GridItem>
 
-      <GridItem area="faq" bg="orange">
-        FAQ
+      <GridItem area="faq">
+        <TitleAccordion />
+        <AccordingGrid />
       </GridItem>
 
       <GridItem area="footer" bg="#4A5721">
