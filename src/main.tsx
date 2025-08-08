@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App.tsx";
 import { ChakraProvider } from "@chakra-ui/react";
 import "@fontsource-variable/josefin-sans";
-import theme from "./them.ts";
+import theme from "./theme.ts";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
