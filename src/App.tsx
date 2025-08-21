@@ -1,5 +1,5 @@
 import "./App.css";
-import { Flex, Grid, GridItem } from "@chakra-ui/react";
+import { Box, Flex, Grid, GridItem } from "@chakra-ui/react";
 import StaticBanner from "./components/StaticBanner";
 import NavBar from "./components/NavBar";
 import MainBanner from "./components/MainBanner";
@@ -14,7 +14,6 @@ function App() {
       templateAreas={{
         base: `"nav" "banner" "carousel" "categories" "faq" "footer"`,
       }}
-      bg="#4A5721"
     >
       <GridItem area="nav">
         <StaticBanner />
@@ -35,8 +34,10 @@ function App() {
       </GridItem>
 
       <GridItem area="faq">
-        <TitleAccordion />
-        <AccordingGrid />
+        <Box w="100%">
+          <TitleAccordion />
+          <AccordingGrid />
+        </Box>
       </GridItem>
 
       <GridItem area="footer">

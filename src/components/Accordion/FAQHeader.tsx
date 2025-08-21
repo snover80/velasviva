@@ -5,7 +5,7 @@ import DecorativeLine from "../DecorativeLine";
 function FAQHeader() {
   return (
     <>
-      <Center>
+      <Center flex={1}>
         <Heading marginTop="20px" fontSize="2xl" color="#4A5721">
           PREGUNTAS FRECUENTES
         </Heading>

@@ -5,6 +5,13 @@ const theme = extendTheme({
     heading: `'Josefin Sans Variable', sans-serif`,
     body: `'Josefin Sans Variable', sans-serif`,
   },
+  styles: {
+    global: {
+      body: {
+        bg: "#4A5721",
+      },
+    },
+  },
 });
 
 export default theme;

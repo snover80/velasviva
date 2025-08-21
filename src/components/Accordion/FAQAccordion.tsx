@@ -15,7 +15,7 @@ interface FAQAccordionProps {
 
 function FAQAccordion({ accordionInfo }: FAQAccordionProps) {
   return (
-    <Box padding="15px" marginTop="15px">
+    <Box padding="15px" marginTop="15px" width="600px">
       <Accordion allowToggle color="#4A5721">
         {accordionInfo.map((information, index) => (
           <AccordionItem key={index}>

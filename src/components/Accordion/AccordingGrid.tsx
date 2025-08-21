@@ -28,12 +28,12 @@ function AccordingGrid() {
 
   return (
     <Flex backgroundImage={questionBackground} backgroundRepeat="no-repeat">
-      <Square flexGrow={1} flexShrink={0} flexBasis="200px">
+      <Square flex="1 1 40%">
         <Center padding="10px">
           <Image src={brillin} height="350px"></Image>
         </Center>
       </Square>
-      <Box flexGrow={1} flexShrink={0} flexBasis="300px">
+      <Box flex="1 1 60%">
         <FAQHeader />
         <FAQAccordion accordionInfo={accordionInfo} />
       </Box>

@@ -1,4 +1,4 @@
-import { Box, Center, Heading, SimpleGrid, VStack } from "@chakra-ui/react";
+import { Center, Heading, SimpleGrid, VStack } from "@chakra-ui/react";
 import CategoriesCard from "./CategoriesCard";
 import virgin from "../../assets/Virgin.webp";
 import flowers from "../../assets/Flowers.webp";
