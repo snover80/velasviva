@@ -4,7 +4,12 @@ import NavButton from "./NavButton";
 
 function NavBar() {
   return (
-    <HStack spacing={10} paddingX="100px" justifyContent="space-between">
+    <HStack
+      spacing={10}
+      paddingX="100px"
+      justifyContent="space-between"
+      bg="#FFFFFF"
+    >
       <Image src={colorLogo} h="90px" objectFit="contain" />
       <NavButton>Inicio</NavButton>
       <NavButton>Productos</NavButton>
