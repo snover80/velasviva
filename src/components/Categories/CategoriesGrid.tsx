@@ -23,7 +23,7 @@ function CategoriesGrid() {
     {
       title: "Kits emprendedores y velas navideñas",
       image: christmas,
-      categoryName: "velas-navideñas",
+      categoryName: "velas-navidenas",
     },
     {
       title: "Velas decorativas, aromatizadas y recordatorios",
@@ -37,31 +37,29 @@ function CategoriesGrid() {
     },
   ];
   return (
-    <>
-      <VStack
-        spacing="0"
-        align="center"
-        w="100%"
-        px={{ base: "10px", md: "20px" }}
-        bg="#4A5721"
+    <VStack
+      spacing="0"
+      align="center"
+      w="100%"
+      px={{ base: "10px", md: "20px" }}
+      bg="#4A5721"
+    >
+      <Center>
+        <Heading marginTop="20px" fontSize="2xl" className="white-text">
+          NUESTRAS CATEGORÍAS
+        </Heading>
+      </Center>
+      <DecorativeLine />
+      <SimpleGrid
+        columns={{ sm: 2, md: 3, lg: 4 }}
+        paddingY="30px"
+        spacing="20px"
       >
-        <Center>
-          <Heading marginTop="20px" fontSize="2xl" className="white-text">
-            NUESTRAS CATEGORÍAS
-          </Heading>
-        </Center>
-        <DecorativeLine />
-        <SimpleGrid
-          columns={{ sm: 2, md: 3, lg: 4 }}
-          paddingY="30px"
-          spacing="20px"
-        >
-          {categories.map((category, index) => (
-            <CategoriesCard key={index} category={category} />
-          ))}
-        </SimpleGrid>
-      </VStack>
-    </>
+        {categories.map((category, index) => (
+          <CategoriesCard key={index} category={category} />
+        ))}
+      </SimpleGrid>
+    </VStack>
   );
 }
 

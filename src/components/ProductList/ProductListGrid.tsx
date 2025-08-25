@@ -1,51 +1,19 @@
 import { SimpleGrid } from "@chakra-ui/react";
+import { useParams } from "react-router-dom";
+import useProducts from "../../hooks/useProducts";
 import ProductListCard from "./ProductListCard";
-import flowers from "../../assets/Flowers.webp";
 
 export interface ProductPerCategory {
   name: string;
   image: string;
 }
 function ProductListGrid() {
-  const productsPerCategory: ProductPerCategory[] = [
-    {
-      name: "Kits y figuras religiosas",
-      image: flowers,
-    },
-    { name: "Kits emprendedores y velas navideñas", image: flowers },
-    {
-      name: "Velas decorativas, aromatizadas y recordatorios",
-      image: flowers,
-    },
-    {
-      name: "Kits espirituales velas viva",
-      image: flowers,
-    },
-    {
-      name: "Kits espirituales velas viva",
-      image: flowers,
-    },
-    {
-      name: "Kits espirituales velas viva",
-      image: flowers,
-    },
-    {
-      name: "Kits espirituales velas viva",
-      image: flowers,
-    },
-    {
-      name: "Kits espirituales velas viva",
-      image: flowers,
-    },
-    {
-      name: "Kits espirituales velas viva",
-      image: flowers,
-    },
-    {
-      name: "Kits espirituales velas viva",
-      image: flowers,
-    },
-  ];
+  const { categoryName } = useParams();
+  const { data: products, error, isLoading } = useProducts(categoryName!);
+
+  if (isLoading) return null;
+  if (error) throw error;
+
   return (
     <SimpleGrid
       columns={{ sm: 2, md: 3, lg: 4 }}
@@ -53,8 +21,8 @@ function ProductListGrid() {
       paddingX="30px"
       spacing="20px"
     >
-      {productsPerCategory.map((category) => (
-        <ProductListCard productsPerCategory={category} />
+      {products?.map((product) => (
+        <ProductListCard key={product.id} productsPerCategory={product} />
       ))}
     </SimpleGrid>
   );
