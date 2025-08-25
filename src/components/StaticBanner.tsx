@@ -6,7 +6,12 @@ import CustomIcon from "./CustomIcon";
 function StaticBanner() {
   return (
     <>
-      <Flex height={50} justifyContent="space-between" alignContent="center">
+      <Flex
+        height={50}
+        justifyContent="space-between"
+        alignContent="center"
+        bg="#4A5721"
+      >
         <HStack paddingX="100px">
           <CustomIcon icon={CiDeliveryTruck} boxSize={8} />
           <Text

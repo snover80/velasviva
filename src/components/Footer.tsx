@@ -15,7 +15,7 @@ function Footer() {
   return (
     <>
       <footer>
-        <Flex color="#FFFFFF">
+        <Flex color="#FFFFFF" bg="#4A5721">
           <HStack
             marginTop="10px"
             marginBottom="15px"

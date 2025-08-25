@@ -9,7 +9,7 @@ const route = createBrowserRouter([
     element: <Layout />,
     children: [
       { index: true, element: <HomePage /> },
-      { path: "/products", element: <ProductListPage /> },
+      { path: "/products/:categoryName", element: <ProductListPage /> },
     ],
   },
 ]);
