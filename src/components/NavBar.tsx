@@ -9,6 +9,7 @@ function NavBar() {
       paddingX="100px"
       justifyContent="space-between"
       bg="#FFFFFF"
+      shadow="md"
     >
       <Image src={colorLogo} h="90px" objectFit="contain" />
       <NavButton>Inicio</NavButton>
