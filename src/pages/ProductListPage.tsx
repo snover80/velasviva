@@ -1,7 +1,13 @@
-import React from "react";
+import ProductListGrid from "../components/ProductList/ProductListGrid";
+import ProductListHeader from "../components/ProductList/ProductListHeader";
 
 function ProductListPage() {
-  return <div>ProductListPage</div>;
+  return (
+    <>
+      <ProductListHeader />
+      <ProductListGrid />
+    </>
+  );
 }
 
 export default ProductListPage;

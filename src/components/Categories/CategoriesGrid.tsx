@@ -10,6 +10,7 @@ import DecorativeLine from "../DecorativeLine";
 export interface Category {
   title: string;
   image: string;
+  categoryName: string;
 }
 
 function CategoriesGrid() {
@@ -17,15 +18,22 @@ function CategoriesGrid() {
     {
       title: "Kits y figuras religiosas",
       image: virgin,
+      categoryName: "figuras-religiosas",
     },
-    { title: "Kits emprendedores y velas navideñas", image: christmas },
+    {
+      title: "Kits emprendedores y velas navideñas",
+      image: christmas,
+      categoryName: "velas-navideñas",
+    },
     {
       title: "Velas decorativas, aromatizadas y recordatorios",
       image: flowers,
+      categoryName: "kits-espirituales",
     },
     {
       title: "Kits espirituales velas viva",
       image: bars,
+      categoryName: "velas-decorativas-aromatizadas",
     },
   ];
   return (
@@ -35,6 +43,7 @@ function CategoriesGrid() {
         align="center"
         w="100%"
         px={{ base: "10px", md: "20px" }}
+        bg="#4A5721"
       >
         <Center>
           <Heading marginTop="20px" fontSize="2xl" className="white-text">
