@@ -10,6 +10,7 @@ const route = createBrowserRouter([
     children: [
       { index: true, element: <HomePage /> },
       { path: "/products/:categoryName", element: <ProductListPage /> },
+      { path: "/products", element: <ProductListPage /> },
     ],
   },
 ]);
