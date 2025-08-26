@@ -28,12 +28,12 @@ function CategoriesGrid() {
     {
       title: "Velas decorativas, aromatizadas y recordatorios",
       image: flowers,
-      categoryName: "kits-espirituales",
+      categoryName: "velas-decorativas-aromatizadas",
     },
     {
       title: "Kits espirituales velas viva",
       image: bars,
-      categoryName: "velas-decorativas-aromatizadas",
+      categoryName: "kits-espirituales",
     },
   ];
   return (
