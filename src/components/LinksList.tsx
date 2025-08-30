@@ -5,7 +5,7 @@ interface LinksLisProps {
   items: string[];
 }
 
-function LinksList({ items }: LinksLisProps) {
+function LinksList({ items }: Readonly<LinksLisProps>) {
   return (
     <List spacing={1}>
       {items.map((item, index) => (

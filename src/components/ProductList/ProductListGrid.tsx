@@ -16,7 +16,7 @@ function ProductListGrid() {
 
   return (
     <SimpleGrid
-      columns={{ sm: 2, md: 3, lg: 4 }}
+      columns={{ sm: 2, md: 2, lg: 3 }}
       paddingY="30px"
       paddingX="30px"
       spacing="20px"

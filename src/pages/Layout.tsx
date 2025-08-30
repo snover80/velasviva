@@ -16,7 +16,7 @@ function Layout() {
       </Box>
 
       <Box as="main">
-        <Outlet /> {/* each page decides its own layout */}
+        <Outlet />
       </Box>
 
       <Box as="footer">

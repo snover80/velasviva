@@ -12,10 +12,10 @@ function NavBar() {
       shadow="md"
     >
       <Image src={colorLogo} h="90px" objectFit="contain" />
-      <NavButton>Inicio</NavButton>
-      <NavButton>Productos</NavButton>
-      <NavButton>Blog</NavButton>
-      <NavButton>Contacto</NavButton>
+      <NavButton path="/">Inicio</NavButton>
+      <NavButton path="/products">Productos</NavButton>
+      <NavButton path="/">Blog</NavButton>
+      <NavButton path="/">Contacto</NavButton>
     </HStack>
   );
 }

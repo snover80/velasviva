@@ -14,7 +14,7 @@ function ProductListCard({
           <Image
             src={productsPerCategory.image}
             borderRadius="10px"
-            boxSize="265px"
+            boxSize={{ base: "340px", sm: "255px", md: "300px" }}
           />
         </Box>
         <Box className="box-structure" minH="45px" marginTop="11px">
