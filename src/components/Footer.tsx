@@ -6,12 +6,16 @@ import FooterContainer from "./FooterContainer";
 import LinksList from "./LinksList";
 
 function Footer() {
-  const pageLinks = ["Inicio", "Productos", "Blog", "Catálogo"];
+  const pageLinks = [
+    { name: "Inicio", link: "/" },
+    { name: "Productos", link: "/products" },
+    { name: "Blog", link: "/blog" },
+  ];
   const legalLinks = [
-    "Políticas de envío",
-    "Políticas de reembolso",
-    "Términos y condiciones",
-    "Recomendaciones de uso",
+    { name: "Políticas de envío", link: "/shipment_politics" },
+    { name: "Políticas de reembolso", link: "/refund" },
+    { name: "Términos y condiciones", link: "/terms_conditions" },
+    { name: "Recomendaciones de uso", link: "/recomendations" },
   ];
   return (
     <SimpleGrid
