@@ -5,11 +5,12 @@ import { Link } from "react-router-dom";
 interface NavButtonProps {
   children: ReactNode;
   color?: string;
+  path: string;
 }
 
-function NavButton({ children, color }: NavButtonProps) {
+function NavButton({ children, color, path }: Readonly<NavButtonProps>) {
   return (
-    <Link to="/">
+    <Link to={path}>
       <Button
         position="relative"
         top="5px"
