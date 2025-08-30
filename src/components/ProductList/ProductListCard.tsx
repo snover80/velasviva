@@ -1,5 +1,5 @@
 import { Box, Button, Card, CardBody, Heading, Image } from "@chakra-ui/react";
-import type { ProductPerCategory } from "./ProductListGrid";
+import type { ProductPerCategory } from "../../entities/ProductPerCategory";
 
 interface ProductListCardProps {
   productsPerCategory: ProductPerCategory;

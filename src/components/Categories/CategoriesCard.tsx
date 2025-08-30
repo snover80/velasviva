@@ -1,7 +1,8 @@
 import { Box, Button, Card, CardBody, Heading, Image } from "@chakra-ui/react";
-import type { Category } from "./CategoriesGrid";
+
 import "./Card.css";
 import { Link } from "react-router-dom";
+import type { Category } from "../../entities/Category";
 
 interface CategoriesCardProps {
   category: Category;
@@ -14,7 +15,7 @@ function CategoriesCard({ category }: Readonly<CategoriesCardProps>) {
       <CardBody>
         <Box className="box-structure" minH="45px" marginTop="0px">
           <Heading className="white-text" fontSize="md" textAlign="center">
-            {category.title}
+            {category.name}
           </Heading>
         </Box>
         <Box display="flex" alignItems="center" justifyContent="center">

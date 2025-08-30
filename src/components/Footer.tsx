@@ -4,19 +4,10 @@ import whiteLogo from "../assets/WhiteLogo.webp";
 import CustomIcon from "./CustomIcon";
 import FooterContainer from "./FooterContainer";
 import LinksList from "./LinksList";
+import PageLinks from "../data/PageLinks";
+import LegalLinks from "../data/LegalLinks";
 
 function Footer() {
-  const pageLinks = [
-    { name: "Inicio", link: "/" },
-    { name: "Productos", link: "/products" },
-    { name: "Blog", link: "/blog" },
-  ];
-  const legalLinks = [
-    { name: "Políticas de envío", link: "/shipment_politics" },
-    { name: "Políticas de reembolso", link: "/refund" },
-    { name: "Términos y condiciones", link: "/terms_conditions" },
-    { name: "Recomendaciones de uso", link: "/recomendations" },
-  ];
   return (
     <SimpleGrid
       w="100%"
@@ -31,11 +22,11 @@ function Footer() {
       </FooterContainer>
 
       <FooterContainer>
-        <LinksList items={pageLinks} />
+        <LinksList items={PageLinks} />
       </FooterContainer>
 
       <FooterContainer>
-        <LinksList items={legalLinks} />
+        <LinksList items={LegalLinks} />
       </FooterContainer>
 
       <FooterContainer>
