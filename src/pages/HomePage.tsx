@@ -1,5 +1,5 @@
 import { Box, Flex, Grid, GridItem } from "@chakra-ui/react";
-import AccordingGrid from "../components/Accordion/AccordingGrid";
+import AccordingGrid from "../components/Accordion/AccordionGrid";
 import TitleAccordion from "../components/Accordion/TitleAccordion";
 import CategoriesGrid from "../components/Categories/CategoriesGrid";
 import MainBanner from "../components/MainBanner";

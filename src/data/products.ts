@@ -30,6 +30,7 @@ import Stickers from "../assets/christmas/Stickers.webp";
 import MixedBoxes from "../assets/christmas/MixedBoxes.webp";
 import MixedCandle10 from "../assets/christmas/MixedCandle10.webp";
 import Candle6 from "../assets/christmas/Candle6.webp";
+import categories from "./Categories";
 
 export default [
   {
@@ -43,7 +44,7 @@ export default [
     price: 50000,
     alternatePrice: null,
     image: SantaMartaKit,
-    categoryName: "figuras-religiosas",
+    categoryName: categories[0].categoryName,
   },
   {
     id: 2,
@@ -54,7 +55,7 @@ export default [
     price: 40000,
     alternatePrice: null,
     image: SantaMarta,
-    categoryName: "figuras-religiosas",
+    categoryName: categories[0].categoryName,
   },
   {
     id: 3,
@@ -67,7 +68,7 @@ export default [
     price: 57000,
     alternatePrice: null,
     image: CarmenKit,
-    categoryName: "figuras-religiosas",
+    categoryName: categories[0].categoryName,
   },
   {
     id: 4,
@@ -76,7 +77,7 @@ export default [
     price: 40000,
     alternatePrice: null,
     image: Carmen,
-    categoryName: "figuras-religiosas",
+    categoryName: categories[0].categoryName,
   },
   {
     id: 5,
@@ -89,7 +90,7 @@ export default [
     price: 50000,
     alternatePrice: null,
     image: GuadalupeKit,
-    categoryName: "figuras-religiosas",
+    categoryName: categories[0].categoryName,
   },
   {
     id: 6,
@@ -98,7 +99,7 @@ export default [
     price: 40000,
     alternatePrice: null,
     image: Guadalupe,
-    categoryName: "figuras-religiosas",
+    categoryName: categories[0].categoryName,
   },
   {
     id: 7,
@@ -111,7 +112,7 @@ export default [
     price: 50000,
     alternatePrice: null,
     image: SanMiguelKit,
-    categoryName: "figuras-religiosas",
+    categoryName: categories[0].categoryName,
   },
   {
     id: 8,
@@ -120,7 +121,7 @@ export default [
     price: 40000,
     alternatePrice: null,
     image: SanMiguel,
-    categoryName: "figuras-religiosas",
+    categoryName: categories[0].categoryName,
   },
   {
     id: 9,
@@ -132,7 +133,7 @@ export default [
     price: 30500,
     alternatePrice: null,
     image: Esences,
-    categoryName: "kits-espirituales",
+    categoryName: categories[3].categoryName,
   },
   {
     id: 10,
@@ -144,7 +145,7 @@ export default [
     price: 35500,
     alternatePrice: null,
     image: Soaps,
-    categoryName: "kits-espirituales",
+    categoryName: categories[3].categoryName,
   },
   {
     id: 11,
@@ -156,7 +157,7 @@ export default [
     price: 25000,
     alternatePrice: null,
     image: Incense,
-    categoryName: "kits-espirituales",
+    categoryName: categories[3].categoryName,
   },
   {
     id: 12,
@@ -169,7 +170,7 @@ export default [
     price: 20500,
     alternatePrice: null,
     image: OpenWaysCombo,
-    categoryName: "kits-espirituales",
+    categoryName: categories[3].categoryName,
   },
   {
     id: 13,
@@ -182,7 +183,7 @@ export default [
     price: 20500,
     alternatePrice: null,
     image: HarmonyFortuneCombo,
-    categoryName: "kits-espirituales",
+    categoryName: categories[3].categoryName,
   },
   {
     id: 14,
@@ -195,7 +196,7 @@ export default [
     price: 25500,
     alternatePrice: null,
     image: EnergyAbundanceCombo,
-    categoryName: "kits-espirituales",
+    categoryName: categories[3].categoryName,
   },
   {
     id: 15,
@@ -207,7 +208,7 @@ export default [
     price: 21000,
     alternatePrice: 18000,
     image: HolyFamily,
-    categoryName: "velas-decorativas-aromatizadas",
+    categoryName: categories[2].categoryName,
   },
   {
     id: 16,
@@ -219,7 +220,7 @@ export default [
     price: 4000,
     alternatePrice: 3500,
     image: Angels,
-    categoryName: "velas-decorativas-aromatizadas",
+    categoryName: categories[2].categoryName,
   },
   {
     id: 17,
@@ -231,7 +232,7 @@ export default [
     price: 12500,
     alternatePrice: 11000,
     image: EggFamily,
-    categoryName: "velas-decorativas-aromatizadas",
+    categoryName: categories[2].categoryName,
   },
   {
     id: 18,
@@ -243,7 +244,7 @@ export default [
     price: 16500,
     alternatePrice: 14000,
     image: GuadalupeVirgin,
-    categoryName: "velas-decorativas-aromatizadas",
+    categoryName: categories[2].categoryName,
   },
   {
     id: 19,
@@ -255,7 +256,7 @@ export default [
     price: 15000,
     alternatePrice: 13000,
     image: ChristmasTree,
-    categoryName: "velas-decorativas-aromatizadas",
+    categoryName: categories[2].categoryName,
   },
   {
     id: 20,
@@ -267,7 +268,7 @@ export default [
     price: 10000,
     alternatePrice: 8500,
     image: DogPaw,
-    categoryName: "velas-decorativas-aromatizadas",
+    categoryName: categories[2].categoryName,
   },
   {
     id: 21,
@@ -279,7 +280,7 @@ export default [
     price: 18500,
     alternatePrice: 16000,
     image: LongFlower,
-    categoryName: "velas-decorativas-aromatizadas",
+    categoryName: categories[2].categoryName,
   },
   {
     id: 22,
@@ -291,7 +292,7 @@ export default [
     price: 16500,
     alternatePrice: 14000,
     image: BubbleCube,
-    categoryName: "velas-decorativas-aromatizadas",
+    categoryName: categories[2].categoryName,
   },
   {
     id: 23,
@@ -303,7 +304,7 @@ export default [
     price: 4000,
     alternatePrice: 3000,
     image: Margarita,
-    categoryName: "velas-decorativas-aromatizadas",
+    categoryName: categories[2].categoryName,
   },
   {
     id: 24,
@@ -315,7 +316,7 @@ export default [
     price: 7000,
     alternatePrice: 6000,
     image: Spiral,
-    categoryName: "velas-decorativas-aromatizadas",
+    categoryName: categories[2].categoryName,
   },
   {
     id: 25,
@@ -327,7 +328,7 @@ export default [
     price: 10000,
     alternatePrice: 8000,
     image: Flowersx7,
-    categoryName: "velas-decorativas-aromatizadas",
+    categoryName: categories[2].categoryName,
   },
   {
     id: 26,
@@ -336,7 +337,7 @@ export default [
     price: 15000,
     alternatePrice: 13500,
     image: Flavored,
-    categoryName: "velas-decorativas-aromatizadas",
+    categoryName: categories[2].categoryName,
   },
   {
     id: 27,
@@ -354,7 +355,7 @@ export default [
     price: 320000,
     alternatePrice: 175000,
     image: EntrepreneurCombo,
-    categoryName: "velas-navidenas",
+    categoryName: categories[1].categoryName,
   },
   {
     id: 28,
@@ -368,7 +369,7 @@ export default [
     price: 220000,
     alternatePrice: 120000,
     image: MixedCandle,
-    categoryName: "velas-navidenas",
+    categoryName: categories[1].categoryName,
   },
   {
     id: 29,
@@ -379,7 +380,7 @@ export default [
     price: 45000,
     alternatePrice: 22500,
     image: Stickers,
-    categoryName: "velas-navidenas",
+    categoryName: categories[1].categoryName,
   },
   {
     id: 30,
@@ -388,7 +389,7 @@ export default [
     price: 1800,
     alternatePrice: null,
     image: MixedBoxes,
-    categoryName: "velas-navidenas",
+    categoryName: categories[1].categoryName,
   },
   {
     id: 31,
@@ -400,7 +401,7 @@ export default [
     price: 17000,
     alternatePrice: null,
     image: MixedCandle10,
-    categoryName: "velas-navidenas",
+    categoryName: categories[1].categoryName,
   },
   {
     id: 32,
@@ -412,6 +413,6 @@ export default [
     price: 10000,
     alternatePrice: null,
     image: Candle6,
-    categoryName: "velas-navidenas",
+    categoryName: categories[1].categoryName,
   },
 ];

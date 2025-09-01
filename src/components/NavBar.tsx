@@ -14,8 +14,8 @@ function NavBar() {
       <Image src={colorLogo} h="90px" objectFit="contain" />
       <NavButton path="/">Inicio</NavButton>
       <NavButton path="/products">Productos</NavButton>
-      <NavButton path="/">Blog</NavButton>
-      <NavButton path="/">Contacto</NavButton>
+      <NavButton path="/blog">Blog</NavButton>
+      <NavButton path="/contact">Contacto</NavButton>
     </HStack>
   );
 }

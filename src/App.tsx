@@ -5,7 +5,7 @@ import NavBar from "./components/NavBar";
 import MainBanner from "./components/MainBanner";
 import CategoriesGrid from "./components/Categories/CategoriesGrid";
 import TitleAccordion from "./components/Accordion/TitleAccordion";
-import AccordingGrid from "./components/Accordion/AccordingGrid";
+import AccordingGrid from "./components/Accordion/AccordionGrid";
 import Footer from "./components/Footer";
 
 function App() {

@@ -1,41 +1,12 @@
 import { Center, Heading, SimpleGrid, VStack } from "@chakra-ui/react";
 import CategoriesCard from "./CategoriesCard";
-import virgin from "../../assets/Virgin.webp";
-import flowers from "../../assets/Flowers.webp";
-import christmas from "../../assets/Christmas.webp";
-import bars from "../../assets/Bars.webp";
-import "./Card.css";
-import DecorativeLine from "../DecorativeLine";
 
-export interface Category {
-  title: string;
-  image: string;
-  categoryName: string;
-}
+import DecorativeLine from "../DecorativeLine";
+import "./Card.css";
+
+import categories from "../../data/Categories";
 
 function CategoriesGrid() {
-  const categories: Category[] = [
-    {
-      title: "Kits y figuras religiosas",
-      image: virgin,
-      categoryName: "figuras-religiosas",
-    },
-    {
-      title: "Kits emprendedores y velas navideñas",
-      image: christmas,
-      categoryName: "velas-navidenas",
-    },
-    {
-      title: "Velas decorativas, aromatizadas y recordatorios",
-      image: flowers,
-      categoryName: "velas-decorativas-aromatizadas",
-    },
-    {
-      title: "Kits espirituales velas viva",
-      image: bars,
-      categoryName: "kits-espirituales",
-    },
-  ];
   return (
     <VStack
       spacing="0"
@@ -55,8 +26,8 @@ function CategoriesGrid() {
         paddingY="30px"
         spacing="20px"
       >
-        {categories.map((category, index) => (
-          <CategoriesCard key={index} category={category} />
+        {categories.map((category) => (
+          <CategoriesCard key={category.id} category={category} />
         ))}
       </SimpleGrid>
     </VStack>

@@ -7,18 +7,18 @@ import {
   Box,
   Text,
 } from "@chakra-ui/react";
-import type { AccordionInfo } from "./AccordingGrid";
+import type { AccordionInfo } from "../../entities/AccordionInfo";
 
 interface FAQAccordionProps {
   accordionInfo: AccordionInfo[];
 }
 
-function FAQAccordion({ accordionInfo }: FAQAccordionProps) {
+function FAQAccordion({ accordionInfo }: Readonly<FAQAccordionProps>) {
   return (
     <Box padding="15px" marginTop="15px" width="600px">
       <Accordion allowToggle color="#4A5721">
-        {accordionInfo.map((information, index) => (
-          <AccordionItem key={index}>
+        {accordionInfo.map((information) => (
+          <AccordionItem key={information.id}>
             <h2>
               <AccordionButton>
                 <Box as="span" flex="1" textAlign="left">
