@@ -1,11 +1,11 @@
-import { Image, Link, SimpleGrid } from "@chakra-ui/react";
+import { Image, SimpleGrid, Link as LinkC } from "@chakra-ui/react";
 import { SlSocialFacebook, SlSocialInstagram } from "react-icons/sl";
-import whiteLogo from "../assets/WhiteLogo.webp";
+import LegalLinks from "../data/LegalLinks";
+import PageLinks from "../data/PageLinks";
 import CustomIcon from "./CustomIcon";
 import FooterContainer from "./FooterContainer";
 import LinksList from "./LinksList";
-import PageLinks from "../data/PageLinks";
-import LegalLinks from "../data/LegalLinks";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -18,7 +18,13 @@ function Footer() {
       bg="#4A5721"
     >
       <FooterContainer>
-        <Image src={whiteLogo} boxSize={{ base: "120px" }} />
+        <Link to="/">
+          <Image
+            src="/photos/WhiteLogo.webp"
+            boxSize={{ base: "120px" }}
+            loading="lazy"
+          />
+        </Link>
       </FooterContainer>
 
       <FooterContainer>
@@ -30,12 +36,12 @@ function Footer() {
       </FooterContainer>
 
       <FooterContainer>
-        <Link href="https://www.facebook.com/p/Velas-Viva-61557475555386/">
+        <LinkC href="https://www.facebook.com/p/Velas-Viva-61557475555386/">
           <CustomIcon icon={SlSocialFacebook} />
-        </Link>
-        <Link href="https://www.instagram.com/velasviva">
+        </LinkC>
+        <LinkC href="https://www.instagram.com/velasviva">
           <CustomIcon icon={SlSocialInstagram} />
-        </Link>
+        </LinkC>
       </FooterContainer>
     </SimpleGrid>
   );

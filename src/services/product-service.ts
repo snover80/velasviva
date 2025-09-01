@@ -1,4 +1,4 @@
-import products from "../data/Products";
+import products from "../data/products";
 import type { Category } from "../entities/Category";
 
 const getProductByCategory = (category: string): Promise<Category[]> => {
