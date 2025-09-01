@@ -9,7 +9,7 @@ function ProductListHeader() {
     <VStack>
       <Center>
         <Heading marginTop="20px" fontSize="2xl" color="#4A5721">
-          {title?.toUpperCase()}
+          {title && title.trim() ? title.toUpperCase() : "TODOS LOS PRODUCTOS"}
         </Heading>
       </Center>
       <DecorativeLine />

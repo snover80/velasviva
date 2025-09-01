@@ -1,6 +1,6 @@
 import { HStack, Image } from "@chakra-ui/react";
-import colorLogo from "../assets/ColorLogo.webp";
 import NavButton from "./NavButton";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
@@ -11,7 +11,14 @@ function NavBar() {
       bg="#FFFFFF"
       shadow="md"
     >
-      <Image src={colorLogo} h="90px" objectFit="contain" />
+      <Link to="/">
+        <Image
+          src="/photos/ColorLogo.webp"
+          h="90px"
+          objectFit="contain"
+          loading="lazy"
+        />
+      </Link>
       <NavButton path="/">Inicio</NavButton>
       <NavButton path="/products">Productos</NavButton>
       <NavButton path="/blog">Blog</NavButton>

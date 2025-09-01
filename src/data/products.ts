@@ -1,35 +1,3 @@
-import SantaMartaKit from "../assets/religious_combo/SantaMartaKit.webp";
-import SantaMarta from "../assets/religious_combo/SantaMarta.webp";
-import CarmenKit from "../assets/religious_combo/CarmenKit.webp";
-import Carmen from "../assets/religious_combo/Carmen.webp";
-import GuadalupeKit from "../assets/religious_combo/GuadalupeKit.webp";
-import Guadalupe from "../assets/religious_combo/Guadalupe.webp";
-import SanMiguelKit from "../assets/religious_combo/SanMiguelKit.webp";
-import SanMiguel from "../assets/religious_combo/SanMiguel.webp";
-import Esences from "../assets/espiritual_combo/Esences.webp";
-import Soaps from "../assets/espiritual_combo/Soaps.webp";
-import OpenWaysCombo from "../assets/espiritual_combo/OpenWaysCombo.webp";
-import HarmonyFortuneCombo from "../assets/espiritual_combo/HarmonyFortuneCombo.webp";
-import EnergyAbundanceCombo from "../assets/espiritual_combo/EnergyAbundanceCombo.webp";
-import Incense from "../assets/espiritual_combo/Incense.webp";
-import Angels from "../assets/decorative/Angels.webp";
-import BubbleCube from "../assets/decorative/BubbleCube.webp";
-import ChristmasTree from "../assets/decorative/ChristmasTree.webp";
-import DogPaw from "../assets/decorative/DogPaw.webp";
-import EggFamily from "../assets/decorative/EggFamily.webp";
-import Flavored from "../assets/decorative/Flavored.webp";
-import Flowersx7 from "../assets/decorative/Flowersx7.webp";
-import GuadalupeVirgin from "../assets/decorative/GuadalupeVirgin.webp";
-import HolyFamily from "../assets/decorative/HolyFamily.webp";
-import LongFlower from "../assets/decorative/LongFlower.webp";
-import Margarita from "../assets/decorative/Margarita.webp";
-import Spiral from "../assets/decorative/Spiral.webp";
-import EntrepreneurCombo from "../assets/christmas/EntrepreneurCombo.webp";
-import MixedCandle from "../assets/christmas/MixedCandle.webp";
-import Stickers from "../assets/christmas/Stickers.webp";
-import MixedBoxes from "../assets/christmas/MixedBoxes.webp";
-import MixedCandle10 from "../assets/christmas/MixedCandle10.webp";
-import Candle6 from "../assets/christmas/Candle6.webp";
 import categories from "./Categories";
 
 export default [
@@ -43,7 +11,7 @@ export default [
     ],
     price: 50000,
     alternatePrice: null,
-    image: SantaMartaKit,
+    image: "/photos/religious_combo/SantaMartaKit.webp",
     categoryName: categories[0].categoryName,
   },
   {
@@ -54,7 +22,7 @@ export default [
     ],
     price: 40000,
     alternatePrice: null,
-    image: SantaMarta,
+    image: "/photos/religious_combo/SantaMarta.webp",
     categoryName: categories[0].categoryName,
   },
   {
@@ -67,7 +35,7 @@ export default [
     ],
     price: 57000,
     alternatePrice: null,
-    image: CarmenKit,
+    image: "/photos/religious_combo/CarmenKit.webp",
     categoryName: categories[0].categoryName,
   },
   {
@@ -76,7 +44,7 @@ export default [
     description: ["Una figura en yeso Virgen del Carmen pintada a mano"],
     price: 40000,
     alternatePrice: null,
-    image: Carmen,
+    image: "/photos/religious_combo/Carmen.webp",
     categoryName: categories[0].categoryName,
   },
   {
@@ -89,7 +57,7 @@ export default [
     ],
     price: 50000,
     alternatePrice: null,
-    image: GuadalupeKit,
+    image: "/photos/religious_combo/GuadalupeKit.webp",
     categoryName: categories[0].categoryName,
   },
   {
@@ -98,7 +66,7 @@ export default [
     description: ["Una figura en yeso Virgen de Guadalupe pintada a mano"],
     price: 40000,
     alternatePrice: null,
-    image: Guadalupe,
+    image: "/photos/religious_combo/Guadalupe.webp",
     categoryName: categories[0].categoryName,
   },
   {
@@ -111,7 +79,7 @@ export default [
     ],
     price: 50000,
     alternatePrice: null,
-    image: SanMiguelKit,
+    image: "/photos/religious_combo/SanMiguelKit.webp",
     categoryName: categories[0].categoryName,
   },
   {
@@ -120,7 +88,7 @@ export default [
     description: ["Una figura en yeso Virgen de Guadalupe pintada a mano"],
     price: 40000,
     alternatePrice: null,
-    image: SanMiguel,
+    image: "/photos/religious_combo/SanMiguel.webp",
     categoryName: categories[0].categoryName,
   },
   {
@@ -132,7 +100,7 @@ export default [
     ],
     price: 30500,
     alternatePrice: null,
-    image: Esences,
+    image: "/photos/espiritual_combo/Esences.webp",
     categoryName: categories[3].categoryName,
   },
   {
@@ -144,7 +112,7 @@ export default [
     ],
     price: 35500,
     alternatePrice: null,
-    image: Soaps,
+    image: "/photos/espiritual_combo/Soaps.webp",
     categoryName: categories[3].categoryName,
   },
   {
@@ -156,7 +124,7 @@ export default [
     ],
     price: 25000,
     alternatePrice: null,
-    image: Incense,
+    image: "/photos/espiritual_combo/Incense.webp",
     categoryName: categories[3].categoryName,
   },
   {
@@ -169,7 +137,7 @@ export default [
     ],
     price: 20500,
     alternatePrice: null,
-    image: OpenWaysCombo,
+    image: "/photos/espiritual_combo/OpenWaysCombo.webp",
     categoryName: categories[3].categoryName,
   },
   {
@@ -182,7 +150,7 @@ export default [
     ],
     price: 20500,
     alternatePrice: null,
-    image: HarmonyFortuneCombo,
+    image: "/photos/espiritual_combo/HarmonyFortuneCombo.webp",
     categoryName: categories[3].categoryName,
   },
   {
@@ -195,7 +163,7 @@ export default [
     ],
     price: 25500,
     alternatePrice: null,
-    image: EnergyAbundanceCombo,
+    image: "/photos/espiritual_combo/EnergyAbundanceCombo.webp",
     categoryName: categories[3].categoryName,
   },
   {
@@ -207,7 +175,7 @@ export default [
     ],
     price: 21000,
     alternatePrice: 18000,
-    image: HolyFamily,
+    image: "/photos/decorative/HolyFamily.webp",
     categoryName: categories[2].categoryName,
   },
   {
@@ -219,7 +187,7 @@ export default [
     ],
     price: 4000,
     alternatePrice: 3500,
-    image: Angels,
+    image: "/photos/decorative/Angels.webp",
     categoryName: categories[2].categoryName,
   },
   {
@@ -231,7 +199,7 @@ export default [
     ],
     price: 12500,
     alternatePrice: 11000,
-    image: EggFamily,
+    image: "/photos/decorative/EggFamily.webp",
     categoryName: categories[2].categoryName,
   },
   {
@@ -243,7 +211,7 @@ export default [
     ],
     price: 16500,
     alternatePrice: 14000,
-    image: GuadalupeVirgin,
+    image: "/photos/decorative/GuadalupeVirgin.webp",
     categoryName: categories[2].categoryName,
   },
   {
@@ -255,7 +223,7 @@ export default [
     ],
     price: 15000,
     alternatePrice: 13000,
-    image: ChristmasTree,
+    image: "/photos/decorative/ChristmasTree.webp",
     categoryName: categories[2].categoryName,
   },
   {
@@ -267,7 +235,7 @@ export default [
     ],
     price: 10000,
     alternatePrice: 8500,
-    image: DogPaw,
+    image: "/photos/decorative/DogPaw.webp",
     categoryName: categories[2].categoryName,
   },
   {
@@ -279,7 +247,7 @@ export default [
     ],
     price: 18500,
     alternatePrice: 16000,
-    image: LongFlower,
+    image: "/photos/decorative/LongFlower.webp",
     categoryName: categories[2].categoryName,
   },
   {
@@ -291,7 +259,7 @@ export default [
     ],
     price: 16500,
     alternatePrice: 14000,
-    image: BubbleCube,
+    image: "/photos/decorative/BubbleCube.webp",
     categoryName: categories[2].categoryName,
   },
   {
@@ -303,7 +271,7 @@ export default [
     ],
     price: 4000,
     alternatePrice: 3000,
-    image: Margarita,
+    image: "/photos/decorative/Margarita.webp",
     categoryName: categories[2].categoryName,
   },
   {
@@ -315,7 +283,7 @@ export default [
     ],
     price: 7000,
     alternatePrice: 6000,
-    image: Spiral,
+    image: "/photos/decorative/Spiral.webp",
     categoryName: categories[2].categoryName,
   },
   {
@@ -327,7 +295,7 @@ export default [
     ],
     price: 10000,
     alternatePrice: 8000,
-    image: Flowersx7,
+    image: "/photos/decorative/Flowersx7.webp",
     categoryName: categories[2].categoryName,
   },
   {
@@ -336,7 +304,7 @@ export default [
     description: ["Material: Vela de cera de soja", "Contenido: 65gr"],
     price: 15000,
     alternatePrice: 13500,
-    image: Flavored,
+    image: "/photos/decorative/Flavored.webp",
     categoryName: categories[2].categoryName,
   },
   {
@@ -354,7 +322,7 @@ export default [
     ],
     price: 320000,
     alternatePrice: 175000,
-    image: EntrepreneurCombo,
+    image: "/photos/christmas/EntrepreneurCombo.webp",
     categoryName: categories[1].categoryName,
   },
   {
@@ -368,7 +336,7 @@ export default [
     ],
     price: 220000,
     alternatePrice: 120000,
-    image: MixedCandle,
+    image: "/photos/christmas/MixedCandle.webp",
     categoryName: categories[1].categoryName,
   },
   {
@@ -379,7 +347,7 @@ export default [
     ],
     price: 45000,
     alternatePrice: 22500,
-    image: Stickers,
+    image: "/photos/christmas/Stickers.webp",
     categoryName: categories[1].categoryName,
   },
   {
@@ -388,7 +356,7 @@ export default [
     description: ["15cm alto * 15,8cm ancho * 1,5cm grosor"],
     price: 1800,
     alternatePrice: null,
-    image: MixedBoxes,
+    image: "/photos/christmas/MixedBoxes.webp",
     categoryName: categories[1].categoryName,
   },
   {
@@ -400,7 +368,7 @@ export default [
     ],
     price: 17000,
     alternatePrice: null,
-    image: MixedCandle10,
+    image: "/photos/christmas/MixedCandle10.webp",
     categoryName: categories[1].categoryName,
   },
   {
@@ -412,7 +380,7 @@ export default [
     ],
     price: 10000,
     alternatePrice: null,
-    image: Candle6,
+    image: "/photos/christmas/Candle6.webp",
     categoryName: categories[1].categoryName,
   },
 ];

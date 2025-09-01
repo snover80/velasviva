@@ -1,21 +1,42 @@
-import { Box, Button, Card, CardBody, Heading, Image } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Card,
+  CardBody,
+  Heading,
+  Image,
+  Skeleton,
+} from "@chakra-ui/react";
+import { useState } from "react";
+
 import type { ProductPerCategory } from "../../entities/ProductPerCategory";
 
 interface ProductListCardProps {
   productsPerCategory: ProductPerCategory;
 }
+
 function ProductListCard({
   productsPerCategory,
 }: Readonly<ProductListCardProps>) {
+  const [imgLoaded, setImgLoaded] = useState(false);
   return (
     <Card bg="transparent" boxShadow="none" borderRadius="md">
       <CardBody>
         <Box display="flex" alignItems="center" justifyContent="center">
-          <Image
-            src={productsPerCategory.image}
+          <Skeleton
+            isLoaded={imgLoaded}
             borderRadius="10px"
-            boxSize={{ base: "340px", sm: "255px", md: "300px" }}
-          />
+            width={{ base: "340px", sm: "255px", md: "300px" }}
+            height={{ base: "340px", sm: "255px", md: "300px" }}
+          >
+            <Image
+              src={productsPerCategory.image}
+              borderRadius="10px"
+              boxSize={{ base: "340px", sm: "255px", md: "300px" }}
+              onLoad={() => setImgLoaded(true)}
+              loading="lazy"
+            />
+          </Skeleton>
         </Box>
         <Box className="box-structure" minH="45px" marginTop="11px">
           <Heading

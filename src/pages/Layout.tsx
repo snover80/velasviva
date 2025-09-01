@@ -3,10 +3,13 @@ import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import StaticBanner from "../components/StaticBanner";
 import { Box, Grid } from "@chakra-ui/react";
+import ScrollToTop from "../components/ScrollToTop";
 
 function Layout() {
   return (
-    <Grid templateRows="auto auto 1fr auto" minH="100vh">
+    <>
+      <ScrollToTop />
+      <Grid templateRows="auto auto 1fr auto" minH="100vh">
       <Box as="header">
         <StaticBanner />
       </Box>
@@ -22,7 +25,8 @@ function Layout() {
       <Box as="footer">
         <Footer />
       </Box>
-    </Grid>
+      </Grid>
+    </>
   );
 }
 
