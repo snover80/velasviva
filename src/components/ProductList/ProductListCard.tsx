@@ -7,7 +7,7 @@ import {
   Image,
   Skeleton,
 } from "@chakra-ui/react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import type { ProductPerCategory } from "../../entities/ProductPerCategory";
 
@@ -19,6 +19,10 @@ function ProductListCard({
   productsPerCategory,
 }: Readonly<ProductListCardProps>) {
   const [imgLoaded, setImgLoaded] = useState(false);
+
+  useEffect(() => {
+    setImgLoaded(false);
+  }, [productsPerCategory.image]);
   return (
     <Card bg="transparent" boxShadow="none" borderRadius="md">
       <CardBody>

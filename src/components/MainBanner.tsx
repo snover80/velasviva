@@ -1,4 +1,5 @@
 import { Flex, Image } from "@chakra-ui/react";
+import mainBannerImg from "../assets/mainBanner.webp";
 
 function MainBanner() {
   return (
@@ -7,7 +8,7 @@ function MainBanner() {
       minHeight={{ base: "100px", md: "200px", lg: "200px" }}
     >
       <Image
-        src="/photos/mainBanner.webp"
+        src={mainBannerImg}
         objectFit="contain"
         h="100%"
         w="auto"
