@@ -1,26 +1,31 @@
+import bars from "../assets/Bars.webp";
+import christmas from "../assets/Christmas.webp";
+import flowers from "../assets/Flowers.webp";
+import virgin from "../assets/Virgin.webp";
+
 export default [
   {
     id: 1,
     name: "Kits y figuras religiosas",
-    image: "/photos/Virgin.webp",
+    image: virgin,
     categoryName: "figuras-religiosas",
   },
   {
     id: 2,
     name: "Kits emprendedores y velas navideñas",
-    image: "/photos/Christmas.webp",
+    image: christmas,
     categoryName: "velas-navidenas",
   },
   {
     id: 3,
     name: "Velas decorativas, aromatizadas y recordatorios",
-    image: "/photos/Flowers.webp",
+    image: flowers,
     categoryName: "velas-decorativas-aromatizadas",
   },
   {
     id: 4,
     name: "Kits espirituales velas viva",
-    image: "/photos/Bars.webp",
+    image: bars,
     categoryName: "kits-espirituales",
   },
 ];

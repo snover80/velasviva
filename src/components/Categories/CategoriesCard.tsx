@@ -11,7 +11,7 @@ import {
 import "./Card.css";
 import { Link } from "react-router-dom";
 import type { Category } from "../../entities/Category";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 interface CategoriesCardProps {
   category: Category;
@@ -19,19 +19,29 @@ interface CategoriesCardProps {
 
 function CategoriesCard({ category }: Readonly<CategoriesCardProps>) {
   const [imgLoaded, setImgLoaded] = useState(false);
+
+  useEffect(() => {
+    setImgLoaded(false);
+  }, [category.image]);
   return (
-    <Card maxW="265px" bg="transparent" boxShadow="none" borderRadius="md">
+    <Card
+      maxW={["90vw", "200px", "265px"]}
+      w="100%"
+      bg="transparent"
+      boxShadow="none"
+      borderRadius="md"
+    >
       <Skeleton
         isLoaded={imgLoaded}
         borderRadius="10px"
-        width={{ base: "340px", sm: "255px", md: "300px" }}
-        height={{ base: "340px", sm: "255px", md: "300px" }}
+        width={["90vw", "200px", "265px"]}
+        height={["90vw", "200px", "265px"]}
       >
         <Link to={`/products/${category.categoryName}`}>
           <Image
             src={category.image}
             borderRadius="10px"
-            boxSize="265px"
+            boxSize={["90vw", "200px", "265px"]}
             loading="lazy"
             onLoad={() => setImgLoaded(true)}
           />

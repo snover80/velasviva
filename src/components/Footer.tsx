@@ -1,11 +1,12 @@
-import { Image, SimpleGrid, Link as LinkC } from "@chakra-ui/react";
+import { Image, Link as LinkC, SimpleGrid } from "@chakra-ui/react";
 import { SlSocialFacebook, SlSocialInstagram } from "react-icons/sl";
+import { Link } from "react-router-dom";
+import whiteLogo from "../assets/WhiteLogo.webp";
 import LegalLinks from "../data/LegalLinks";
 import PageLinks from "../data/PageLinks";
 import CustomIcon from "./CustomIcon";
 import FooterContainer from "./FooterContainer";
 import LinksList from "./LinksList";
-import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -19,11 +20,7 @@ function Footer() {
     >
       <FooterContainer>
         <Link to="/">
-          <Image
-            src="/photos/WhiteLogo.webp"
-            boxSize={{ base: "120px" }}
-            loading="lazy"
-          />
+          <Image src={whiteLogo} boxSize={{ base: "120px" }} loading="lazy" />
         </Link>
       </FooterContainer>
 
