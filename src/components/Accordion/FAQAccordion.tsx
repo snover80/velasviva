@@ -15,7 +15,7 @@ interface FAQAccordionProps {
 
 function FAQAccordion({ accordionInfo }: Readonly<FAQAccordionProps>) {
   return (
-    <Box padding="15px" marginTop="15px" width="600px">
+    <Box padding="10px" marginTop="15px" width="600px">
       <Accordion allowToggle color="#4A5721">
         {accordionInfo.map((information) => (
           <AccordionItem key={information.id}>
@@ -28,11 +28,31 @@ function FAQAccordion({ accordionInfo }: Readonly<FAQAccordionProps>) {
               </AccordionButton>
             </h2>
             <AccordionPanel pb={4}>
-              {information.text.map((raw, index) => (
-                <Text key={index} fontSize="sm" margin="5px">
-                  {raw}
-                </Text>
-              ))}
+              {information.text.map((raw, index) => {
+                if (raw === "") {
+                  return <Box key={index} h="10px" />;
+                }
+                if (
+                  raw.trim().toLowerCase() === "horario presencial:" ||
+                  raw.trim().toLowerCase() === "horario vía whatsapp:"
+                ) {
+                  return (
+                    <Text
+                      key={index}
+                      fontWeight="bold"
+                      fontSize="sm"
+                      margin="5px"
+                    >
+                      {raw}
+                    </Text>
+                  );
+                }
+                return (
+                  <Text key={index} fontSize="sm" margin="5px">
+                    {raw}
+                  </Text>
+                );
+              })}
             </AccordionPanel>
           </AccordionItem>
         ))}

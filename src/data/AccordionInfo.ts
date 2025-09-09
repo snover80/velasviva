@@ -35,5 +35,12 @@ export default [
       "💬 +57 300 8244616",
     ],
   },
-  { id: 4, title: "¿Qué métodos de pago manejan?", text: ["texto de prueba"] },
+  {
+    id: 4,
+    title: "¿Qué métodos de pago manejan?",
+    text: [
+      "* Pago anticipado para envíos nacionales por medio de Nequi o DaviPlata. El costo del envío depende del peso del paquete, ronda desde $35.000 en adelante este se paga cuando llegue el producto.",
+      "* Pago contra entrega solo en Bogotá. El dominicilio tiene un costo de $12.000 se realizan entregas los días sábado",
+    ],
+  },
 ];

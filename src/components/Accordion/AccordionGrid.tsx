@@ -7,17 +7,25 @@ import FAQHeader from "./FAQHeader";
 
 function AccordingGrid() {
   return (
-    <Flex backgroundImage={questionBackground} backgroundRepeat="no-repeat">
-      <Square flex="1 1 40%">
-        <Center padding="10px">
-          <Image src={brillin} height="350px" loading="lazy"></Image>
-        </Center>
-      </Square>
-      <Box flex="1 1 60%">
+    <Box
+      w="100%"
+      backgroundImage={questionBackground}
+      backgroundRepeat="no-repeat"
+    >
+      <Box w="100%" textAlign="center" mb={4}>
         <FAQHeader />
-        <FAQAccordion accordionInfo={accordionInfo} />
       </Box>
-    </Flex>
+      <Flex>
+        <Square flex="1 1 40%">
+          <Center>
+            <Image src={brillin} height="350px" loading="lazy"></Image>
+          </Center>
+        </Square>
+        <Box flex="1 1 60%">
+          <FAQAccordion accordionInfo={accordionInfo} />
+        </Box>
+      </Flex>
+    </Box>
   );
 }
 
