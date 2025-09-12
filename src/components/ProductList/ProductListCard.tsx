@@ -10,6 +10,7 @@ import {
 import { useState, useEffect } from "react";
 
 import type { ProductPerCategory } from "../../entities/ProductPerCategory";
+import { Link } from "react-router-dom";
 
 interface ProductListCardProps {
   productsPerCategory: ProductPerCategory;
@@ -33,13 +34,15 @@ function ProductListCard({
             width={{ base: "340px", sm: "255px", md: "300px" }}
             height={{ base: "340px", sm: "255px", md: "300px" }}
           >
-            <Image
-              src={productsPerCategory.image}
-              borderRadius="10px"
-              boxSize={{ base: "340px", sm: "255px", md: "300px" }}
-              onLoad={() => setImgLoaded(true)}
-              loading="lazy"
-            />
+            <Link to={`/product/${productsPerCategory.id}`}>
+              <Image
+                src={productsPerCategory.image}
+                borderRadius="10px"
+                boxSize={{ base: "340px", sm: "255px", md: "300px" }}
+                onLoad={() => setImgLoaded(true)}
+                loading="lazy"
+              />
+            </Link>
           </Skeleton>
         </Box>
         <Box className="box-structure" minH="45px" marginTop="11px">
@@ -53,9 +56,11 @@ function ProductListCard({
           </Heading>
         </Box>
         <Box display="flex" alignItems="center" justifyContent="center">
-          <Button bg="#EC8C44" color="#FFFFFF" marginTop="10px">
-            Ver Producto
-          </Button>
+          <Link to={`/product/${productsPerCategory.id}`}>
+            <Button bg="#EC8C44" color="#FFFFFF" marginTop="10px">
+              Ver Producto
+            </Button>
+          </Link>
         </Box>
       </CardBody>
     </Card>

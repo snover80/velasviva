@@ -1,9 +1,9 @@
 import { useQuery } from "@tanstack/react-query";
-import type { Category } from "../entities/Category";
 import getProductByCategory from "../services/product-service";
+import type { ProductPerCategory } from "../entities/ProductPerCategory";
 
 const useProducts = (category: string) => {
-  return useQuery<Category[]>({
+  return useQuery<ProductPerCategory[]>({
     queryKey: ["products", category],
     queryFn: () => getProductByCategory(category),
   });

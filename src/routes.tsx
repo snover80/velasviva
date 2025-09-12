@@ -8,6 +8,7 @@ import ShipmentPoliticsPage from "./pages/ShipmentPoliticsPage";
 import RefundPage from "./pages/RefundPage";
 import TermsAndConditionsPage from "./pages/TermsAndConditionsPage";
 import RecommendationsPage from "./pages/RecommendationsPage";
+import ProductDetailPage from "./pages/ProductDetailPage";
 
 const route = createBrowserRouter([
   {
@@ -23,6 +24,7 @@ const route = createBrowserRouter([
       { path: "/refund", element: <RefundPage /> },
       { path: "/terms_conditions", element: <TermsAndConditionsPage /> },
       { path: "/recomendations", element: <RecommendationsPage /> },
+      { path: "/product/:id", element: <ProductDetailPage /> },
     ],
   },
 ]);
